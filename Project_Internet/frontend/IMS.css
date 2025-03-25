@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Sukhumvit";
+    src: url("./Sukhumvit/SukhumvitSet-SemiBold.ttf");
+    }
+    
+
+  /* Navbar */
+.navbar {
+  font-family: "Sukhumvit";
+  position: fixed; /* กำหนดให้ติดด้านบนพอเวลาเลื่อนแถบก็ลงตามมาด้วย */
+  top: 0; /* กำหนดให้ติดด้านบนของหน้าเว็บ */
+  left: 0; /* กำหนดให้ติดด้านซ้ายของหน้าเว็บ */
+  width: 100%; /* กำหนดความกว้างเต็มหน้าจอ */
+  background-color: #000000; /* Green navbar */
+  padding: 10px 20px; /* กำหนดระยะห่างของข้อความภายใน Navbar */
+  box-sizing: border-box; /* กำหนดให้ข้อความอยู่ในกล่อง */
+}
+
+.navbar-brand {
+  color: white;
+
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Body */
+.inventory-heading{
+    
+    display: flex;
+    font-family: "Sukhumvit";
+    justify-content: center;
+    text-align: center; 
+    align-items: center; /* กำหนดให้ข้อความอยู่ตรงกลาง */
+    margin-top: 70px; /* เลื่อนข้อความให้มาอยู่ด้านล่าง*/
+    margin-bottom: 20px; /* เลื่อน ตารางลงมาด้านล่าง */
+}
+/* ตกแต่งตารางให้มี font ความกว้างของตาราง  */
+table {
+    width: 100%;
+    font-family: "Sukhumvit";
+    border-collapse: collapse; /* กำหนดให้เล็กขึ้น */
+   
+}
+
+/* ตกแต่งตารางให้มีขอบด้านล่างและด้านขวา */
+table th, table td {
+    font-family: "Sukhumvit";
+    padding: 7px; /* กำหนดระยะห่างของข้อความ */
+    text-align: left; /* กำหนดให้ข้อความชิดซ้าย */
+    
+    /* กำหนดขอบของแต่ละคอลัมน์ */
+    border-bottom: 2px solid #ddd; /* เพิ่มเส้นใต้ขอบของแต่ละแถว */
+    border-right: 1px solid #ddd;  /* เพิ่มเส้นขอบของแต่ละคอลัมน์ */
+}
+
+/* ตกแต่งส่วนหัวของตาราง id,รหัสสินค้า,9ล9*/
+table th {
+    background-color: #f2f2f2;
+     font-family: "Sukhumvit";
+    font-weight: bold; /* กำหนดให้ข้อความหนาขึ้น */
+}
+
+
+table tr:hover {
+    background-color: #f5f5f5; /* กำหนดสีพื้นหลังเมื่อเมาส์ไปชี้ที่แถว */
+   }
+
+
+
+/* Buttons */
+.edit-button, .delete-button {
+    padding: 8px 16px;  /* กำหนดระยะของข้อความภายในปุ่ม */
+    border: none; /* กำหนดไม่มีเส้นขอบ */
+    border-radius: 4px; /* กำหนดมุมของปุ่ม */
+    cursor: pointer; /* กำหนดเคอร์เซอร์เป็นรูปของมือ */
+    transition: background-color 0.3s; /* กำหนดเวลาในการเปลี่ยนสีเวลาเอาเมาส์ไปเลื่อนที่ปุ่ม */
+    text-decoration: none; /* กำหนดไม่มีขีดเส้นใต้ข้อความ */
+    font-family: "Sukhumvit";
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white; /* กำหนดสีข้อความ */
+}
+
+.delete-button {
+    background-color: #cb1b1b;
+    color: white;   /* กำหนดสีข้อความ */
+}
+
+.edit-button:hover { /* กำหนดสีพื้นหลังเมื่อเมาส์ไปชี้ที่ปุ่ม edit */
+    background-color: rgb(13, 110, 255);
+
+}
+.delete-button:hover { /* กำหนดสีพื้นหลังเมื่อเมาส์ไปชี้ปุ่ม delete */
+    background-color: #ff7700;
+}
+
